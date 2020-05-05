@@ -16,6 +16,7 @@ import (
 
 // CacheTable is a table within the cache
 type CacheTable struct {
+	// 这里是golang的嵌套
 	sync.RWMutex
 
 	// The table's name.

@@ -56,6 +56,7 @@ func TestCache(t *testing.T) {
 
 func TestCacheExpire(t *testing.T) {
 	table := Cache("testCache")
+	//table.SetLogger(log.New(os.Stdout, "aaaa", 0))
 
 	table.Add(k+"_1", 250*time.Millisecond, v+"_1")
 	table.Add(k+"_2", 200*time.Millisecond, v+"_2")
